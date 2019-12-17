@@ -9,10 +9,10 @@ import { Label } from 'ng2-charts';
 })
 export class DashboardComponent implements OnInit {
   public lineChartData: ChartDataSets[] = [
-    { data: [10, 20, 30], label: 'Series 1' },
+    { data: [null, 20, 30], label: 'Series 1' },
     { data: [5, 30, 15], label: 'Series 2' },
   ];
-  public lineChartLabels: Label[] = ['x', 'y', 'z']
+  public lineChartLabels: Label[] = ['Jan', 'Feb', 'Mar','Apr', 'May', 'Jun','Jul', 'Aug', 'Sep','Oct', 'Nov', 'Dec']
   public lineChartLegend = true;
   public lineChartType = 'line';
   public chartOption = {
