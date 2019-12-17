@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateGroupComponent } from './create-group/create-group.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateUserComponent,
-    CreateGroupComponent
+    CreateGroupComponent,
+    SideMenuComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,

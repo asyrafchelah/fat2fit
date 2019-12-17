@@ -15,8 +15,8 @@ export class CreateGroupComponent implements OnInit {
 
   
 ngOnInit() {
-      this.Fat2FitService.lists.subscribe(lists => {
-        this.lists = lists
+this.Fat2FitService.lists.subscribe(lists => {
+this.lists = lists
 })
 
 }
