@@ -8,13 +8,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule  } from "@angular/forms";
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateGroupComponent } from './create-group/create-group.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     CreateUserComponent,
-    CreateGroupComponent
+    CreateGroupComponent,
+    SideMenuComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,

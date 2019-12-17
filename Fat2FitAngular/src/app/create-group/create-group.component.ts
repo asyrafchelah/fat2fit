@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { Fat2FitService } from '../fat2-fit.service';
 
 @Component({
   selector: 'app-create-group',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-group.component.scss']
 })
 export class CreateGroupComponent implements OnInit {
+  @Input()
+  Name = new FormControl('');
+  lists = []
+  constructor(private Fat2FitService: Fat2FitService) { }
 
-  constructor() { }
+  
+ngOnInit() {
+this.Fat2FitService.lists.subscribe(lists => {
+this.lists = lists
+})
 
-  ngOnInit() {
-  }
+}
 
 }
